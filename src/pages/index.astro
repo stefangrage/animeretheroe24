@@ -4,9 +4,24 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	</article>
+	<section class="lg:grid lg:grid-cols-5 lg:grid-rows-5 ">
+		<video class="lg:col-start-1 lg:col-span-5 lg:row-start-1 lg:row-span-5" autoplay loop muted>
+			<source src="animeret-hero.mp4" type="video/mp4">
+		</video>
+		<div class="lg:col-start-2 lg:col-span-2 lg:row-start-4 lg:row-span-2 z-10">
+			<h1 class="text-7xl bg-white inline">Vorbasse Halloweenmarked</h1><br>
+			<p class="text-3xl bg-white inline">For femte år i træk fejres Halloween i Vorbasse. Det bliver vildt, det bliver blodigt. Ingen adgang for børn og svagelige!</p>
+		</div>
+	</section>
+	<section class="max-w-2xl mx-auto py-8">
+		<h2 class="text-3xl py-4">Lorem ipsum</h2>
+		<p class="py-4">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda animi nesciunt doloribus odio possimus aliquam nihil iure quaerat repudiandae voluptate labore dignissimos eligendi molestiae pariatur numquam saepe, ratione voluptas deserunt?
+		</p>
+		<h2 class="text-3xl py-4">Lorem ipsum</h2>
+		<p class="py-4">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda animi nesciunt doloribus odio possimus aliquam nihil iure quaerat repudiandae voluptate labore dignissimos eligendi molestiae pariatur numquam saepe, ratione voluptas deserunt?
+		</p>
+	</section>
+
 </MainLayout>
